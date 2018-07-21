@@ -1,0 +1,455 @@
+a:hover{
+	text-decoration: none;	
+}
+/* 多余字体省略号代替 */
+.ep {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/*********** 轮播图 ***********/
+#banner{
+	width: 100%;
+	height: 450px;
+	background-color: #f5f5f5;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	top:0;
+}
+#banner .list_box{
+	position: relative;
+	z-index: 10;
+}
+/** 商品分类 **/
+#banner .list_box .cat_list{
+	position: absolute;
+	width: 200px;
+	height: 450px;
+	background-color: #303030;
+}
+#banner .list_box .cat_list .cat_box{
+	padding: 0 20px;
+	margin-top: 20px;
+}
+#banner .list_box .cat_list .cat_box .title{
+	font-size: 16px;
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+}
+#banner .list_box .cat_list .cat_box .title a{
+	transition: all .5s;
+}
+#banner .list_box .cat_list .cat_box .title:hover a{
+	padding-left: 20px;
+}
+#banner .list_box .cat_list .cat_box .line {
+	line-height: 20px;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #666;
+}
+
+/** 签到 **/
+#banner .list_box .user_list {
+	position: absolute;
+	right: 0;
+	background-color: #f8f8f8;
+	width: 200px;
+	height: 450px;
+}
+#banner .list_box .user_list .login_box {
+	height: 220px;
+	line-height: 24px;
+	text-align: center;
+	border: 1px solid #ececec;
+	background-image: url(../images/login-box-bg.gif);
+}
+#banner .list_box .user_list .login_box .avt_port{
+	width: 60px;
+	height: 60px;
+	margin: auto;
+	margin-top: 32px;
+	margin-bottom: 12px;
+	position: relative;
+}
+#banner .list_box .user_list .login_box .avt_port img{
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+#banner .list_box .user_list .login_box .avt_port::after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	width: 62px;
+	height: 62px;
+	border: 1px solid #e0e0e0;
+	border-radius: 50%;
+}
+#banner .list_box .user_list .login_box .c6 {
+	color: #666;
+}
+#user{
+	font-size:18px;
+	color:#97191d;
+	font-weight: bold;
+}
+#banner .list_box .user_list .login_box .point a{
+	color: #97191d;
+}
+#banner .list_box .user_list .login_box .report_box {
+	padding: 10px 24px;
+	position: relative;
+}
+#banner .list_box .user_list .login_box .report_box .qd{
+	color: #fff;
+	background-color: #97191d;
+	background-image: linear-gradient(to bottom, #cb2126 0, #b31e22 100%);
+	background-repeat: repeat-x;
+	border-color: #590f11;
+	border: 1px solid transparent;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	border-radius: 4px;
+}
+#banner .list_box .user_list .login_box .report_box .qd:hover{
+	text-decoration: none;	
+}
+#banner .list_box .user_list .agent_box {
+	height: 70px;
+	position: relative;
+	border: 1px solid #ececec;
+	border-top: 0;
+}
+#banner .list_box .user_list .agent_box .agent {
+	float: left;
+	line-height: 30px;
+	text-align: center;
+	padding: 7px 0;
+	overflow: hidden;
+	width: 50%;
+	height: 100%;
+	text-decoration: none !important;
+}
+#banner .list_box .user_list .agent_box .agent i {
+	color: #333;
+	font-size: 24px;
+}
+#banner .list_box .user_list .agent_box .agent p {
+	color: #666;
+	font-size: 12px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-bottom: 0;
+}
+
+/* 图片 */
+#banner ul.banner-img{
+	position:absolute;
+	left:0;
+}
+#banner ul.banner-img>li{
+	float:left;
+/*	width:100%;*/
+}
+#banner ul.banner-img img{
+	width:100%;
+	height:450px;
+}
+#banner ul.indicators{
+	position:absolute;
+	bottom:10px;
+	left:50%;
+	margin-left:-34px;
+}
+#banner ul.indicators li{
+	width:12px;
+	height:12px;
+	cursor:pointer;
+	background:#fff;
+	border-radius:50%;
+	float:left;
+	margin-right:5px;
+	transition:all .2s linear;
+}
+#banner ul.indicators li.hover{
+	background-color:#b31e22;;
+}
+/********** 楼梯导航 **********/
+.floor-nav {
+    z-index: 100;
+    width: 120px;
+    padding: 10px;
+	display: none;
+    position: fixed;
+	top: 180px;
+}
+.floor-nav .scroll-nav{
+    color: #666;
+    display: block;
+    padding: 10px 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-bottom: 1px solid transparent;
+}
+.floor-nav .active {
+    border-bottom: 1px solid #b31e22;
+}
+/********** 楼层 **********/
+
+/* 楼层公共部分 */
+#content  .title{
+	background: linear-gradient(to right, #dee2e3, #d9d7d7);
+	color: #fff;
+	height: 40px;
+	padding: 0 10px 0 15px;
+	line-height: 40px;
+	position: relative;
+	margin: 40px 0 10px;
+	text-shadow: 0 1px 1px #666;
+}
+#content .title::after {
+	content: '';
+	display: block;
+	background-image: url(../images/img.gif);
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+}
+/* 鼠标经过图片闪高光 */
+.hot-img {
+	position: relative;
+	overflow: hidden;
+}
+.hot-img::before {
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 100%;
+	left: -75%;
+	background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(50%,rgba(255,255,255,.2)),color-stop(100%,rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(left,rgba(255,255,255,0)0,rgba(255,255,255,.2)50%,rgba(255,255,255,0)100%);
+	-webkit-transform: skewX(-25deg);
+	-moz-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hot-img:hover::before {
+	left: 145%;
+	-webkit-transition: left .8s;
+	transition: left .8s;
+}
+/* 内容修饰部分 */
+#content .scroll_floor .title .fz16 {
+  font-size: 16px;
+}
+#content .scroll_floor .con_box {
+	width: 100%;
+	height: 560px;
+}
+#content .scroll_floor .con_box .left—img {
+	width: 300px;
+	height: 100%;
+	position: relative;
+}
+#content .scroll_floor .con_box .right-box{
+	height: 100%;
+	background-color: #f5f5f5;
+}
+#content .scroll_floor .con_box .right-box .floor-item {
+	height: 280px;
+	padding: 10px;
+	display: block;
+	position: relative;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+#content .scroll_floor .con_box .right-box .floor-item:hover {
+	background-color: #fff;
+	box-shadow: 0 0 15px #ccc;
+}
+#content .scroll_floor .con_box .right-box .floor-item .item-img {
+	width: 100%;
+	height: 210px;
+}
+#content .scroll_floor .con_box .right-box .floor-item .item-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	vertical-align: middle;
+}
+#content .scroll_floor .con_box .right-box .floor-item .price {
+	height: 32px;
+	line-height: 32px;
+}
+#content .scroll_floor .con_box .right-box .floor-item .cr {
+	color: #b31e22;
+}
+#content .scroll_floor .con_box .right-box .floor-item .fz16 {
+	font-size: 16px;
+}
+#content .scroll_floor .con_box .right-box .floor-item .c6 {
+	color: #666;
+}
+#content .scroll_floor .con_box .right-box .floor-item  .name {
+	color: #666;
+	font-size: 14px;
+	line-height: 16px;
+}
+/* 1楼 左侧爆款 */
+#content .floor1 .title .more {
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+}
+#content .floor1 .pull_left{
+	width: 900px;
+}
+#content .floor1 .pull_left .con_box .right-box{
+	width: 600px;
+}
+#content .floor1 .pull_left .con_box .right-box .floor-item {
+	width: 33.333333%;
+}
+/* 1楼 右侧公告 */
+#content .scroll_floor .pull_right {
+	width: 280px;
+}
+#content .scroll_floor .pull_right .con_box {
+	width: 100%;
+	height: 560px;
+}
+#content .scroll_floor .pull_right .con_box .bgf5 {
+    background-color: #f5f5f5;
+}
+#content .scroll_floor .pull_right .con_box .notice-box {
+	width: 100%;
+	height: 260px;
+	padding: 10px;
+	line-height: 24px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+#content .scroll_floor .pull_right .con_box .notice-box .swiper-container {
+	height: 100%;
+	position: relative;
+	left: 0;
+	overflow: hidden;
+	margin: 0 auto;	
+}
+#content .scroll_floor .pull_right .con_box .notice-box .swiper-container .swiper-wrapper{
+	width: 100%;
+	position: absolute;
+	top:0;
+}
+#content .scroll_floor .pull_right .con_box .notice-box .swiper-slide {
+	display:block;
+	width: 100%;
+	height:24px;
+	color: #666;
+	text-decoration: none;
+}
+#content .scroll_floor .pull_right .con_box .notice-box .swiper-slide:hover {
+	color: #b31e22;
+}
+#content .scroll_floor .pull_right .con_box .buts-box {
+	width: 100%;
+	height: 280px;
+	padding: 10px;
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div {
+	width: 50%;
+	height: 50%;
+	padding: 5px;
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div > a {
+	width: 100%;
+	color: #666;
+	height: 100%;
+	display: block;
+	font-size: 16px;
+	padding-top: 20px;
+	text-align: center;
+	position: relative;
+	border-radius: 5px;
+	text-decoration: none;
+	box-shadow: 2px 2px 5px #ccc;
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div .but-icon {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div:nth-child(1) .but-icon {
+	background-image: url(../images/but_1.png);
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div:nth-child(2) .but-icon {
+	background-image: url(../images/but_2.png)
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div:nth-child(3) .but-icon {
+	background-image: url(../images/but_3.png);
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div:nth-child(4) .but-icon {
+	background-image: url(../images/but_4.png);
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div:nth-child(1) > a:hover .but-icon {
+	background-image: url(../images/but_hover_1.png);
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div:nth-child(2) > a:hover .but-icon {
+	background-image: url(../images/but_hover_2.png);
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div:nth-child(3) > a:hover .but-icon {
+	background-image: url(../images/but_hover_3.png);
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div:nth-child(4) > a:hover .but-icon {
+	background-image: url(../images/but_hover_4.png);
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div > a:hover {
+	color: #fff;
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div:nth-child(1) > a:hover {
+	background:  linear-gradient(135deg, #8cd9ff, #30bdfe);
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div:nth-child(2) > a:hover {
+	background:  linear-gradient(135deg, #ffb2b2, #ff6666);
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div:nth-child(3) > a:hover {
+	background:  linear-gradient(135deg, #ffda6b, #fbbe03);
+}
+#content .scroll_floor .pull_right .con_box .buts-box .but-div:nth-child(4) > a:hover {
+	background:  linear-gradient(135deg, #e5b2ff, #c869ff);
+}
+/* 2楼 女装、3楼 男装、4楼 童装、5楼 包包、6楼 鞋靴 */
+#content .floor2 .con_box .right-box,#content .floor3 .con_box .right-box,
+#content .floor4 .con_box .right-box,#content .floor5 .con_box .right-box,
+#content .floor6 .con_box .right-box{
+	width: 900px;
+}
+#content .floor2 .con_box .right-box .floor-item,#content .floor3 .con_box .right-box .floor-item,
+#content .floor4 .con_box .right-box .floor-item,#content .floor5 .con_box .right-box .floor-item,
+#content .floor6 .con_box .right-box .floor-item{
+	width: 25%;
+}
+
+#content .floor6 .title .case-list a {
+	color: #fff;
+	font-size: 12px;
+	padding: 3px 10px;
+	margin-left: 10px;
+	text-decoration: none;
+	border: 1px solid rgba(255, 255, 255, .8);
+	background-color: rgba(255, 255, 255, .2);
+}
+#content .floor6 .title .case-list a:hover {
+	border: 1px solid #fff;
+	background-color: rgba(255, 255, 255, .5);
+}
+

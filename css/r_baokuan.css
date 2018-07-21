@@ -1,0 +1,143 @@
+/******** 爆款右侧 ********/
+#content .r-list .segments_content {
+	border: 1px solid #e0e0e0;
+	position: relative;
+	padding: 20px;
+}
+#content .r-list .title{
+	background-image: url(../images/lace-title_1.png);
+}
+#content .r-list .title,#content .tab-content .recommends .title{
+	display: block;
+	width: 180px;
+	height: 20px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#content .r-list .title .c6{
+	color: #666;
+}
+#content .r-list .title .c6,#content .tab-content .recommends .title .cr{
+	width: 70px;
+	margin: auto;
+	display: block;
+	text-align: center;
+	line-height: 20px;
+}
+#content .r-list .picked-box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50px;
+}
+#content .r-list .picked-box .picked-item,
+#content .tab-content .recommends .picked-box .picked-item {
+	display: block;
+	position: relative;
+	width: 160px;
+	height: 160px;
+}
+#content .r-list .picked-box .picked-item .look_price,
+#content .tab-content .recommends .picked-box .picked-item .look_price{
+	line-height: 20px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255,255,255,.8);
+	text-align: center;
+}
+#content .r-list .picked-box .picked-item:hover .look_price,
+#content .tab-content .recommends .picked-box .picked-item:hover .look_price{
+	color: #fff;
+	background-color: rgba(179,30,34,.8);
+}
+/*************** 商品列表右侧爆款 ***************/
+#content .r-list .segments_content {
+	height: 1900px;
+	margin-top: 10px;
+}
+#content .r-list .picked-box .picked-item {
+	margin: 20px auto;
+}
+/*************** 商品详情页右侧爆款 ***************/
+#content .r-list #segments{
+	height: 600px;
+	margin: 5px 0 10px;
+}
+#content .r-list #segments .picked-box{
+	height: 510px;
+	overflow:hidden;
+}
+#content .r-list .segments_content .picked-box .picked-item {
+	margin: 10px auto;
+}
+#content .r-list .segments_content .picked-button-prev,
+#content .r-list .segments_content .picked-button-next{
+	width: 32px;
+	height: 13px;
+	z-index: 5;
+	background-position: center;
+	position: absolute;
+	bottom: 12px;
+	background-repeat: no-repeat;
+}
+#content .r-list .segments_content .picked-button-prev{
+	background-image: url(../images/prev.gif);
+	left: 50px;
+}
+#content .r-list .segments_content .picked-button-next{
+	background-image: url(../images/next.gif);
+	right: 50px;
+}
+#content .r-list .segments_content .picked-button-prev:hover{
+	background-image: url(../images/prev1.gif);
+}
+#content .r-list .segments_content .picked-button-next:hover{
+	background-image: url(../images/next1.gif);
+}
+/*************** 商品详情页底部爆款 ***************/
+#content .item-nav-tabs{
+	height: 43px;
+	position: absolute;
+	top: -42px;
+	left: 0;
+	right: 0;
+}
+#content .tab-content .recommends{
+	width: 990px;
+	height: 240px;
+	padding: 59px 19px 19px;
+	margin: 40px 0;
+	position: relative;
+	border: 1px solid #e0e0e0;
+}
+#content .tab-content .recommends .title{
+	top: 24px;
+	background-image: url(../images/lace-title_2.png);
+}
+#content .tab-content .recommends .title .cr{
+	color: #b31e22;
+}
+#content .tab-content .recommends .picked-box{
+	width: 950px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#content .tab-content .recommends .picked-box .box{
+	width: 1150px;
+	/*display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;*/
+}
+#content .tab-content .recommends .picked-box .box .picked-item{
+	margin-right: 38px;
+	float: left;
+}
+#content .tab-content .recommends .picked-box .box .picked-item:last-child{
+	margin-right: 0;
+}

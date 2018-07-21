@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>U袋网-鞋服包一件代发 批发</title>
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/login.css">	
+</head>
+<body>
+	<div class="com_width">
+		<div id="logo">
+				<a href="index.html"><img src="picture/1508814306.jpg" alt=""></a>
+		</div>
+	</div>
+	<div id="main">
+		<div class="container">
+			<!-- 登录框 -->
+			<div class="form_box login" style="display:block;">
+				<h2>欢迎登录U袋网平台</h2>
+				<form action="" class="tabs_form" method="post" id="login_form">
+					<div class="form_group">
+						<div class="input_group">
+							<div class="bor_r">
+								<span class="glyphicon glyphicon-phone"></span>
+							</div>
+							<input type="text" name="phone" placeholder="手机号" maxlength="11" class="input phone" value="13511001100">
+						</div>
+					</div>
+					<div class="form_group">
+						<div class="input_group clear">
+							<div class="bor_r lf">
+								<span class="glyphicon glyphicon-lock"></span>
+							</div>
+							<input type="password" name="upwd" placeholder="请输入密码" class="input upwd" value="D123456">
+							<div class="bor_l rf">
+								<span class="glyphicon glyphicon-eye-open"></span>
+							</div>
+						</div>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" checked>
+							<i></i>30天内免登录
+						</label>
+						<a href="javascript:;" class="rf" id="resetpwd" data-toggle="resetpwd">忘记密码？</a>
+					</div>
+					<!-- 接收错误信息 -->
+					<div class="form_group">
+						<div class="error_msg" style="display: none">
+							<div class="warning_alert">
+								<button class="close"><span>×</span></button>
+								<strong>手机号码错误</strong> 请输入11位数的号码
+								<!-- <strong>密码过短</strong>  请输入6位以上的密码 -->
+							</div>
+						</div>
+					</div>
+					<button class="btns" id="btn1" type="button">登录</button>
+					<p>没有账号？<a href="javascript:;" id="register" data-toggle="register">免费注册</a></p>
+				</form>
+			</div>
+			<!-- 注册框 -->
+			<div class="form_box reg" style="display:none;">
+				<h2>欢迎注册<a href="javascript:;" id="reglogin1" data-toggle="reglogin1">返回登录</a></h2>
+				<form action="" class="tabs_form" method="post" id="reg_form">
+					<div class="form_group">
+						<div class="input_group">
+							<div class="bor_r">
+								<span class="glyphicon glyphicon-phone"></span>
+							</div>
+							<input type="text" name="phone" placeholder="手机号" maxlength="11" class="input phone">
+						</div>
+					</div>
+					<div class="form_group">
+						<div class="input_group clear">
+							<input type="text" name="smscode" placeholder="输入验证码" class="input yzm">
+							<span class="bor_w rf"><button class="btn">发送短信验证码</button></span>
+						</div>
+					</div>
+					<div class="form_group">
+						<div class="input_group clear">
+							<div class="bor_r lf">
+								<span class="glyphicon glyphicon-phone"></span>
+							</div>
+							<input type="password" name="upwd" placeholder="请输入密码" class="input upwd">
+							<div class="bor_l rf">
+								<span class="glyphicon glyphicon-eye-open"></span>
+							</div>
+						</div>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" checked>
+							<i></i>同意
+							<a href="javascript:;">U袋网用户协议</a>
+						</label>
+						
+					</div>
+					<!-- 接收错误信息 -->
+					<div class="form_group">
+						<div class="error_msg" style="display: none">
+							<div class="warning_alert">
+								<button class="close"><span>×</span></button>
+								<strong>手机号码错误</strong> 请输入11位数的号码
+								<!-- <strong>密码过短</strong>  请输入6位以上的密码 -->
+							</div>
+						</div>
+					</div>
+					<button class="btns" id="btn2" type="button">注册</button>
+				</form>
+			</div>
+			<!-- 重置密码框 -->
+			<div class="form_box reset" style="display:none;">
+				<h2>找回密码<a href="javascript:;" id="reglogin2" data-toggle="reglogin2">返回登录</a></h2>
+				<form action="" class="tabs_form" method="post" id="reset_form">
+					<div class="form_group">
+						<div class="input_group">
+							<div class="bor_r">
+								<span class="glyphicon glyphicon-phone"></span>
+							</div>
+							<input type="text" name="phone" placeholder="手机号" maxlength="11" class="input phone">
+						</div>
+					</div>
+					<div class="form_group">
+						<div class="input_group clear">
+							<input type="text" name="smscode" placeholder="输入验证码" class="input yzm">
+							<span class="bor_w rf"><button class="btn">发送短信验证码</button></span>
+						</div>
+					</div>
+					<div class="form_group">
+						<div class="input_group clear">
+							<div class="bor_r lf">
+								<span class="glyphicon glyphicon-lock"></span>
+							</div>
+							<input type="password" name="upwd" placeholder="新的密码" class="input reset_pwd">
+							<div class="bor_l rf">
+								<span class="glyphicon glyphicon-eye-open"></span>
+							</div>
+						</div>
+					</div>
+					<!-- 接收错误信息 -->
+					<div class="form_group">
+						<div class="error_msg" style="display: none">
+							<div class="warning_alert">
+								<button class="close"><span>×</span></button>
+								<strong>手机号码错误</strong> 请输入11位数的号码
+								<!-- <strong>密码过短</strong>  请输入6位以上的密码 -->
+							</div>
+						</div>
+					</div>
+					<button class="btns" id="btn3">重置密码</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="com_width">
+		<!-- 底部 -->
+		<div id="footer" class="clearfix">
+			<ul class="list">
+				<li><a href="agent_level.html">网店代销</a></li>
+				<li><a href="class_room.html">U袋学堂</a></li>
+				<li><a href="contact_us.html">联系我们</a></li>
+				<li><a href="udai_article.php?id=63">企业简介</a></li>
+				<li><a href="udai_article.php?id=58">新手上路</a></li>
+			</ul>
+			<p>&copy;&nbsp;2005-2019&nbsp;U袋网&nbsp;版权所有，并保留所有权利</p>
+			<p>ICP备案证书号：闽ICP备17027669号-1&nbsp;&nbsp;&nbsp;&nbsp;福建省宁德市福鼎市南下村小区（锦昌阁）1栋1梯602室&nbsp;&nbsp;&nbsp;&nbsp;Tel: 0593-7872640&nbsp;&nbsp;&nbsp;&nbsp;E-mail: 3002304569@qq.com</p>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/login.js"></script>
+</body>
+</html>
